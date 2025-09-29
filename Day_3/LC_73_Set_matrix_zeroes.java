@@ -1,8 +1,11 @@
 package Day_3;
 import java.util.*;
 public class LC_73_Set_matrix_zeroes {
-    public static void setZeroes(int[][] matrix) {
-        int[][] originalMatrix = Arrays.copyOf(matrix, matrix.length);
+    public void setZeroes(int[][] matrix) {
+        int[][] originalMatrix = new int[matrix.length][matrix[0].length];
+        for(int r=0; r<matrix.length; r++){
+            originalMatrix[r] = Arrays.copyOf(matrix[r], matrix[0].length);
+        }
         for(int i = 0; i < matrix.length; i++){
             for(int j = 0; j < matrix[0].length; j++){
                 if(originalMatrix[i][j]==0){
@@ -29,4 +32,3 @@ public class LC_73_Set_matrix_zeroes {
         }
     }
 }
-// Issue
