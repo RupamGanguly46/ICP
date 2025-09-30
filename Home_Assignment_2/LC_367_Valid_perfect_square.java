@@ -1,3 +1,4 @@
+package Home_Assignment_2;
 public class LC_367_Valid_perfect_square {
     public boolean isPerfectSquare(int num) {
         int low = 1;

@@ -1,3 +1,4 @@
+package Home_Assignment_2;
 public class LC_88_Merge_sorted_array {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] nums3 = new int[m];
