@@ -1,4 +1,4 @@
-package Day_6;
+package Home_Assignment_6;
 import java.util.*;
 public class LC_40_Combination_Sum_II {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
