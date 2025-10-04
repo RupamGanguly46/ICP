@@ -1,4 +1,4 @@
-package Day_6;
+package Day_7;
 import java.util.*;
 public class LC_22_Generate_Parentheses {
     public List<String> generateParenthesis(int n) {

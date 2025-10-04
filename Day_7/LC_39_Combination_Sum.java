@@ -1,4 +1,4 @@
-package Day_6;
+package Day_7;
 import java.util.*;
 public class LC_39_Combination_Sum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
