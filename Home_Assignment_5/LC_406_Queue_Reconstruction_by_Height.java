@@ -1,0 +1,10 @@
+package Home_Assignment_5;
+import java.util.*;
+public class LC_406_Queue_Reconstruction_by_Height {
+  public int[][] reconstructQueue(int[][] people) {
+            Arrays.sort(people, (a, b) -> a[0] != b[0] ? b[0]-a[0] : a[1]-b[1]);
+        List<int[]> queue = new LinkedList<>();
+        for (int[] p : people) queue.add(p[1], p);
+        return queue.toArray(new int[people.length][2]); 
+    }
+}
