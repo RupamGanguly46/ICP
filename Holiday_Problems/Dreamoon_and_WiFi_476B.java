@@ -32,6 +32,7 @@ public class Dreamoon_and_WiFi_476B {
             }else{
                 System.out.printf("%.12f\n",dp[n][target+offset]);
             }
+            s.close();
         }
     }
 }

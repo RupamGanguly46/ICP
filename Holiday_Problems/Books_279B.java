@@ -21,6 +21,8 @@ public class Books_279B {
                 right++;
             }
             System.out.println(maxBooks);
+            s.close();
+
         }
     }
 }

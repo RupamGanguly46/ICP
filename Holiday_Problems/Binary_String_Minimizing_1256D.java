@@ -27,6 +27,7 @@ public class Binary_String_Minimizing_1256D {
                 }
                 System.out.println(new String(c));
             }
+            s.close();
         }
     }
 }

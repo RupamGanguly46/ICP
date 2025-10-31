@@ -15,6 +15,7 @@ public class Little_Elephant_and_Function_221A {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
         f(n);
+        s.close();
     }
     }
 }
