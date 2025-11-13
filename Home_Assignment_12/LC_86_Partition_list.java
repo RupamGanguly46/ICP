@@ -1,5 +1,13 @@
+package Home_Assignment_12;
 
 public class LC_86_Partition_list {
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
     public ListNode partition(ListNode head, int x) {
         ListNode before = new ListNode(0);
         ListNode after = new ListNode(0);
