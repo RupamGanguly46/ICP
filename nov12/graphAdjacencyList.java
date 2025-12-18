@@ -81,10 +81,10 @@ public class graphAdjacencyList {
         createGraph(arr);
         
         // Print neighbour of a given vertex
-        // for(int i=0; i<arr[0].size(); i++){
-        //     Edge e = arr[0].get(i);
-        //     System.out.println(e.des);
-        // }
+        for(int i=0; i<arr[0].size(); i++){
+            Edge e = arr[0].get(i);
+            System.out.println(e.des);
+        }
 
         // Traverse over all nodes using BFS
         // boolean[] vis = new boolean[V];

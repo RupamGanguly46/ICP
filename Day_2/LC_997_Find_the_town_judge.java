@@ -1,3 +1,4 @@
+package Day_2;
 public class LC_997_Find_the_town_judge {
     public static int findJudge(int n, int[][] trust) {
         int[] doesTrust = new int[n+1];

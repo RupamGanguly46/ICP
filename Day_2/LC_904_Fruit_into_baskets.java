@@ -1,3 +1,4 @@
+package Day_2;
 public class LC_904_Fruit_into_baskets {
     public int totalFruit(int[] fruits) {
         int curmax = 0;

@@ -1,3 +1,4 @@
+package Day_2;
 public class LC_704_Binary_search {
     public int search(int[] nums, int target) {
         int low = 0;

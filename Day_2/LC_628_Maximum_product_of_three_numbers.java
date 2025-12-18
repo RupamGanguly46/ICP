@@ -1,3 +1,4 @@
+package Day_2;
 import java.util.*;
 public class LC_628_Maximum_product_of_three_numbers {
     public static int maximumProduct(int[] nums) {

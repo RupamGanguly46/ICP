@@ -1,3 +1,4 @@
+package Day_2;
 public class LC_875_Koko_eating_bananas {
     public int minEatingSpeed(int[] piles, int h) {
         // int minSpeed = sum(piles)/h;
