@@ -48,6 +48,7 @@ public class DijkstraAlgo {
             visited.add(rem.node);
 
             SD.put(rem.node, rem.pathdis);
+            System.out.println(rem.node + " " + rem.pathdis);
 
             for(int nbr: g.map.get(rem.node).keySet()){
                 if(!visited.contains(nbr)){

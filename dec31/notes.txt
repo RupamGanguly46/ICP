@@ -1,0 +1,19 @@
+System Design , LLD
+SOLID principle
+
+class hotel
+id, rating, user, name, description, list of proto, address
+
+class room
+hotel id, room id, type, ...
+
+class user
+user id, details
+
+class booking
+booking id, hotel id, room id, user id, payment id
+
+class payment
+payment id
+
+OSI Model, OS, DBMS, Networking
