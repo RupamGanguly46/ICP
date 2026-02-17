@@ -1,12 +1,12 @@
 import java.util.*;
 public class graphAdjacencyList {
-        public static class Edge{
-            int src;
-            int des;
-            public Edge(int s, int d){
-                this.src = s;
-                this.des = d;
-            }
+    public static class Edge{
+        int src;
+        int des;
+        public Edge(int s, int d){
+            this.src = s;
+            this.des = d;
+        }
     }
 
     public static void createGraph(ArrayList<Edge> arr[]){
