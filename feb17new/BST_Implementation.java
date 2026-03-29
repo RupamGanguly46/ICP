@@ -41,7 +41,8 @@ public class BST_Implementation {
             if(val > n.val){
                 n.right = insert(n.right, val);
             }
-
+                                                                                                                                                      
+            // +1 doesn't indicate increment in height but that parent is 1 height more than child always
             n.height = Math.max(height(n.left), height(n.right)) + 1;
 
             return n;
@@ -63,10 +64,12 @@ public class BST_Implementation {
         }
         
         // n*log(n)
+        // This helps prevent O(n) for skewed trees like 1->2->3->4, by using sorted array.
         public void populateSorted(int[] nums){
             populateSorted(nums, 0, nums.length);
         }
 
+    
         private void populateSorted(int[] nums, int start, int end){
             if(start >= end) return;
             int mid = (end - start)/2 + start;
@@ -78,6 +81,7 @@ public class BST_Implementation {
         public void preorder(){
             preorder(root);
         }
+
         private void preorder(Node n){
             if(n == null) return;
             System.out.print(n.val + " ");
@@ -88,6 +92,7 @@ public class BST_Implementation {
         public void inorder(){
             inorder(root);
         }
+
         private void inorder(Node n){
             if(n == null) return;
             inorder(n.left);
@@ -98,13 +103,13 @@ public class BST_Implementation {
         public void postorder(){
             postorder(root);
         }
+
         private void postorder(Node n){
             if(n == null) return;
             postorder(n.left);
             postorder(n.right);
             System.out.print(n.val + " ");
         }
-
 
         public void prettyDisplay(){
             prettyDisplay(this.root, 0);

@@ -47,7 +47,7 @@ public class Binary_Tree_Implementation {
     
         private void display(Node n, String indent){
             if(n == null) return;
-            System.out.println(n.val + indent);
+            System.out.println(indent + n.val);
             display(n.left, indent+"\t");
             display(n.right, indent+"\t");
         }
@@ -76,7 +76,7 @@ public class Binary_Tree_Implementation {
     public static void main(String[] args) {
         Tree t = new Tree(0);
         t.populate();
-        // t.display();
-        t.prettyDisplay();
+        t.display();
+        // t.prettyDisplay();
     }
 }
