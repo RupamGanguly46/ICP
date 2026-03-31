@@ -42,7 +42,8 @@ public class SegmentTreeImplementation {
             
             Node nn = new Node(start, end);
 
-            int mid = (end - start)/2 + start;
+            // int mid = (end - start)/2 + start;
+            int mid = (start + end)/2;
 
             nn.left = createTree(arr, start, mid);
             nn.right = createTree(arr, mid+1, end);
